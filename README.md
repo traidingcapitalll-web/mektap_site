@@ -1,1 +1,224 @@
-# mektap_site
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title>220 Келешек мектеп</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    text-align: center;
+    color: white;
+}
+
+h1 { padding: 20px; }
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover { background: #ddd; }
+
+.box {
+    background: white;
+    color: black;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    border-radius: 15px;
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background: #667eea;
+    color: white;
+}
+</style>
+
+<script>
+function showClass(id) {
+    let boxes = document.getElementsByClassName("box");
+    for (let i = 0; i < boxes.length; i++) {
+        boxes[i].style.display = "none";
+    }
+    document.getElementById(id).style.display = "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>🏫 220-шы Келешек мектеп</h1>
+
+<div>
+<button onclick="showClass('c9a')">9А</button>
+<button onclick="showClass('c9b')">9Б</button>
+<button onclick="showClass('c9v')">9В</button>
+
+<button onclick="showClass('c10a')">10А</button>
+<button onclick="showClass('c10b')">10Б</button>
+<button onclick="showClass('c10v')">10В</button>
+<button onclick="showClass('c10g')">10Г</button>
+
+<button onclick="showClass('c11a')">11А</button>
+</div>
+
+<!-- Бос сыныптар -->
+<div id="c9a" class="box"><h2>Ақпарат тіркелмеген</h2></div>
+<div id="c9b" class="box"><h2>Ақпарат тіркелмеген</h2></div>
+<div id="c9v" class="box"><h2>Ақпарат тіркелмеген</h2></div>
+<div id="c10a" class="box"><h2>Ақпарат тіркелмеген</h2></div>
+<div id="c10b" class="box"><h2>Ақпарат тіркелмеген</h2></div>
+<div id="c10g" class="box"><h2>Ақпарат тіркелмеген</h2></div>
+<div id="c11a" class="box"><h2>Ақпарат тіркелмеген</h2></div>
+
+<!-- 10В -->
+<div id="c10v" class="box">
+
+<h2>10В сыныбы оқушылары</h2>
+<p>
+Олжас, Алихан, Азамат, Асия, Еламан, Батыр, Рамазан,
+Бауыржан, Абдулмалик, Дария, Мариям, Каусар,
+Толқын, Алуа, Лаура
+</p>
+
+<h2>📅 Сабақ кестесі</h2>
+
+<!-- ДҮЙСЕНБІ -->
+<h3>Дүйсенбі</h3>
+<table>
+<tr><th>№</th><th>Уақыт</th><th>Сабақ</th></tr>
+
+<tr><td>1</td><td>08:00-08:45</td><td>Сынып сағаты</td></tr>
+<tr><td>Үзіліс</td><td>08:45-08:50</td><td>5 мин</td></tr>
+
+<tr><td>2</td><td>08:50-09:35</td><td>Қазақстан тарих</td></tr>
+<tr><td>Үзіліс</td><td>09:35-09:50</td><td>15 мин</td></tr>
+
+<tr><td>3</td><td>09:50-10:35</td><td>Информатика</td></tr>
+<tr><td>Үзіліс</td><td>10:35-10:50</td><td>15 мин</td></tr>
+
+<tr><td>4</td><td>10:50-11:35</td><td>Алгебра</td></tr>
+<tr><td>Үзіліс</td><td>11:35-11:40</td><td>5 мин</td></tr>
+
+<tr><td>5</td><td>11:40-12:25</td><td>Орыс тілі</td></tr>
+<tr><td>Үзіліс</td><td>12:25-12:30</td><td>5 мин</td></tr>
+
+<tr><td>6</td><td>12:30-13:15</td><td>Ағылшын</td></tr>
+
+</table>
+
+<!-- СЕЙСЕНБІ -->
+<h3>Сейсенбі</h3>
+<table>
+<tr><th>№</th><th>Уақыт</th><th>Сабақ</th></tr>
+
+<tr><td>1</td><td>08:00-08:45</td><td>Алгебра</td></tr>
+<tr><td>Үзіліс</td><td>08:45-08:50</td><td>5 мин</td></tr>
+
+<tr><td>2</td><td>08:50-09:35</td><td>Құқық негіздері</td></tr>
+<tr><td>Үзіліс</td><td>09:35-09:50</td><td>15 мин</td></tr>
+
+<tr><td>3</td><td>09:50-10:35</td><td>Қазақ әдебиеті</td></tr>
+<tr><td>Үзіліс</td><td>10:35-10:50</td><td>15 мин</td></tr>
+
+<tr><td>4</td><td>10:50-11:35</td><td>Биология</td></tr>
+<tr><td>Үзіліс</td><td>11:35-11:40</td><td>5 мин</td></tr>
+
+<tr><td>5</td><td>11:40-12:25</td><td>Геометрия</td></tr>
+<tr><td>Үзіліс</td><td>12:25-12:30</td><td>5 мин</td></tr>
+
+<tr><td>6</td><td>12:30-13:15</td><td>Дене шынықтыру</td></tr>
+
+</table>
+
+<!-- СӘРСЕНБІ -->
+<h3>Сәрсенбі</h3>
+<table>
+<tr><th>№</th><th>Уақыт</th><th>Сабақ</th></tr>
+
+<tr><td>1</td><td>08:00-08:45</td><td>Дене шынықтыру</td></tr>
+<tr><td>Үзіліс</td><td>08:45-08:50</td><td>5 мин</td></tr>
+
+<tr><td>2</td><td>08:50-09:35</td><td>Шетел тілі</td></tr>
+<tr><td>Үзіліс</td><td>09:35-09:50</td><td>15 мин</td></tr>
+
+<tr><td>3</td><td>09:50-10:35</td><td>Дүние жүзі тарих</td></tr>
+<tr><td>Үзіліс</td><td>10:35-10:50</td><td>15 мин</td></tr>
+
+<tr><td>4</td><td>10:50-11:35</td><td>Алгебра</td></tr>
+<tr><td>Үзіліс</td><td>11:35-11:40</td><td>5 мин</td></tr>
+
+<tr><td>5</td><td>11:40-12:25</td><td>География</td></tr>
+<tr><td>Үзіліс</td><td>12:25-12:30</td><td>5 мин</td></tr>
+
+<tr><td>6</td><td>12:30-13:15</td><td>Информатика</td></tr>
+
+</table>
+
+<!-- БЕЙСЕНБІ -->
+<h3>Бейсенбі</h3>
+<table>
+<tr><th>№</th><th>Уақыт</th><th>Сабақ</th></tr>
+
+<tr><td>1</td><td>08:00-08:45</td><td>Ағылшын</td></tr>
+<tr><td>Үзіліс</td><td>08:45-08:50</td><td>5 мин</td></tr>
+
+<tr><td>2</td><td>08:50-09:35</td><td>Алгебра</td></tr>
+<tr><td>Үзіліс</td><td>09:35-09:50</td><td>15 мин</td></tr>
+
+<tr><td>3</td><td>09:50-10:35</td><td>Қазақ әдебиеті</td></tr>
+<tr><td>Үзіліс</td><td>10:35-10:50</td><td>15 мин</td></tr>
+
+<tr><td>4</td><td>10:50-11:35</td><td>Биология</td></tr>
+<tr><td>Үзіліс</td><td>11:35-11:40</td><td>5 мин</td></tr>
+
+<tr><td>5</td><td>11:40-12:25</td><td>Орыс тілі</td></tr>
+<tr><td>Үзіліс</td><td>12:25-12:30</td><td>5 мин</td></tr>
+
+<tr><td>6</td><td>12:30-13:15</td><td>География</td></tr>
+
+</table>
+
+<!-- ЖҰМА -->
+<h3>Жұма</h3>
+<table>
+<tr><th>№</th><th>Уақыт</th><th>Сабақ</th></tr>
+
+<tr><td>1</td><td>08:00-08:45</td><td>Биология</td></tr>
+<tr><td>Үзіліс</td><td>08:45-08:50</td><td>5 мин</td></tr>
+
+<tr><td>2</td><td>08:50-09:35</td><td>Қазақ тілі</td></tr>
+<tr><td>Үзіліс</td><td>09:35-09:50</td><td>15 мин</td></tr>
+
+<tr><td>3</td><td>09:50-10:35</td><td>Геометрия</td></tr>
+<tr><td>Үзіліс</td><td>10:35-10:50</td><td>15 мин</td></tr>
+
+<tr><td>4</td><td>10:50-11:35</td><td>География</td></tr>
+<tr><td>Үзіліс</td><td>11:35-11:40</td><td>5 мин</td></tr>
+
+<tr><td>5</td><td>11:40-12:25</td><td>АӘД</td></tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
